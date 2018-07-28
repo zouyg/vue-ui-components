@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/zouyg/vue-ui-components/issues"
   },
-  "homepage": "https://github.com/zouyg/vue-ui-components#readme"
+  "homepage": "https://github.com/zouyg/vue-ui-components#readme",
+  "dependencies": {
+    "vue": "^2.5.16"
+  }
 }
