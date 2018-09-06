@@ -34,15 +34,10 @@
         100% { transform: rotate(360deg) }
     }
     .g-button {
-        font-size: var(--font-size);
-        height: var(--button-height);
-        padding: 0 1em;
-        border-radius: var(--border-radius);
-        border: 1px solid var(--border-color);
-        background-color: var(--button-bg);
+        font-size: var(--font-size); height: var(--button-height); padding: 0 1em; border-radius: var(--border-radius);
+        border: 1px solid var(--border-color); background-color: var(--button-bg);
         display: inline-flex;justify-content: center;align-items: center;
         vertical-align: top;
-
         &:hover { border-color: var(--border-color-hover); }
         &:active { background-color: var(--button-active-bg); }
         &:focus { outline: none; }
@@ -52,8 +47,6 @@
             >.icon { order: 2; margin-right: 0; margin-left: .3em }
             >.content { order: 1; };
         }
-        .loading {
-            animation: 1s linear spin infinite;
-        }
+        .loading { animation: 1s linear spin infinite; }
     }
 </style>
