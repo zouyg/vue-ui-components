@@ -21,13 +21,11 @@
     .g-button-group {
         display: inline-flex;
         vertical-align: middle;
+        margin-left: 1px;
         > .g-button {
             border-radius: 0;
-            &:not(:first-child) {
-                margin-left: -1px;
-            }
+            margin-left: -1px;
             &:first-child {
-                margin-left: 1px;
                 border-top-left-radius: var(--border-radius);
                 border-bottom-left-radius: var(--border-radius);
             }
