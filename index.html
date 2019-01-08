@@ -27,50 +27,66 @@
             margin-top: 20px;
         }
 
-        /*.row {*/
-            /*display: flex;*/
-        /*}*/
-        /*.col {*/
-            /*height: 100px;*/
-            /*width: 50%;*/
-            /*background: grey;*/
-            /*border: 1px solid red;*/
-        /*}*/
+        .demoBox {
+            height: 50px;
+            background: grey;
+            border: 1px solid red;
+        }
     </style>
 </head>
 <body>
 <div id="app">
-    <g-row gutter="20">
-        <g-col>1</g-col>
-        <g-col>2</g-col>
-    </g-row>
-    <g-row gutter="20">
-        <g-col>1</g-col>
-        <g-col>2</g-col>
-        <g-col>3</g-col>
-    </g-row>
-    <g-row gutter="20">
-        <g-col span="2">1</g-col>
-        <g-col span="20" offset="2">11</g-col>
-    </g-row>
-    <g-row gutter="20">
-        <g-col span="4">1</g-col>
-        <g-col span="20">11</g-col>
-    </g-row>
-    <g-row gutter="20">
-        <g-col span="8">1</g-col>
-        <g-col span="16">11</g-col>
-    </g-row>
-    <g-row gutter="20">
-        <g-col span="4">1</g-col>
-        <g-col span="8" offset="2">1</g-col>
-        <g-col span="8" offset="2">11</g-col>
-    </g-row>
-    <g-row gutter="20">
-        <g-col span="4">1</g-col>
-        <g-col span="4" offset="6">1</g-col>
-        <g-col span="8" offset="2">11</g-col>
-    </g-row>
+    <div style="border: 1px solid black;">
+        <g-row>
+            <g-col span="24" :pad="{span:12}" :narrow-pc="{span:8}" :pc="{span:6}" :wide-pc="{span:4}">1</g-col>
+            <g-col span="24" :pad="{span:12}" :narrow-pc="{span:8}" :pc="{span:6}" :wide-pc="{span:4}">1</g-col>
+            <g-col span="24" :pad="{span:12}" :narrow-pc="{span:8}" :pc="{span:6}" :wide-pc="{span:4}">1</g-col>
+            <g-col span="24" :pad="{span:12}" :narrow-pc="{span:8}" :pc="{span:6}" :wide-pc="{span:4}">1</g-col>
+            <g-col span="24" :pad="{span:12}" :narrow-pc="{span:8}" :pc="{span:6}" :wide-pc="{span:4}">1</g-col>
+            <g-col span="24" :pad="{span:12}" :narrow-pc="{span:8}" :pc="{span:6}" :wide-pc="{span:4}">1</g-col>
+        </g-row>
+        <g-row gutter="20">
+            <g-col span="24"
+                   :pad="{span:8}"
+                   :narrow-pc="{span:4}"
+                   :pc="{span:2}"
+                   :wide-pc="{span:1}">1</g-col>
+            <g-col span="24"
+                   :pad="{span:16}"
+                   :narrow-pc="{span:20}"
+                   :pc="{span:22}"
+                   :wide-pc="{span:23}"
+            >11</g-col>
+        </g-row>
+        <g-row gutter="20" align="center" class="demoBox">
+            <g-col>1</g-col>
+            <g-col>2</g-col>
+            <g-col>3</g-col>
+        </g-row>
+        <g-row gutter="20" align="right" class="demoBox">
+            <g-col span="2">1</g-col>
+            <g-col span="20" offset="2">11</g-col>
+        </g-row>
+        <g-row gutter="20" align="right" class="demoBox">
+            <g-col span="4">1</g-col>
+            <g-col span="20">11</g-col>
+        </g-row>
+        <g-row gutter="20" align="right" class="demoBox">
+            <g-col span="8">1</g-col>
+            <g-col span="16">11</g-col>
+        </g-row>
+        <g-row gutter="20" align="right" class="demoBox">
+            <g-col span="4">1</g-col>
+            <g-col span="8" offset="2">1</g-col>
+            <g-col span="8" offset="2">11</g-col>
+        </g-row>
+        <g-row gutter="20" align="right" class="demoBox">
+            <g-col span="4">1</g-col>
+            <g-col span="4" offset="6">1</g-col>
+            <g-col span="8" offset="2">11</g-col>
+        </g-row>
+    </div>
+
 
 
     <div class="box">
